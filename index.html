@@ -1,0 +1,187 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Eltomia — AI-powered social media growth intelligence.">
+  <meta name="theme-color" content="#0d0b16">
+  <title>Eltomia | Social Media Growth Intelligence</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #0d0b16;
+      --surface: #181425;
+      --text: #f5f3fa;
+      --muted: #b8b2c8;
+      --accent: #a78bfa;
+      --border: #302940;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background:
+        radial-gradient(ellipse at 50% 15%,
+          rgba(125, 76, 220, .16), transparent 55%),
+        var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont,
+        "Segoe UI", Arial, sans-serif;
+      line-height: 1.65;
+      min-height: 100vh;
+    }
+    a { color: var(--accent); }
+    .container {
+      width: min(100% - 40px, 1050px);
+      margin: auto;
+    }
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 28px 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .brand {
+      font-size: 25px;
+      font-weight: 800;
+      letter-spacing: -.04em;
+      color: var(--text);
+      text-decoration: none;
+    }
+    .brand span { color: var(--accent); }
+    .status {
+      border: 1px solid var(--border);
+      background: var(--surface);
+      border-radius: 100px;
+      padding: 7px 14px;
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 600;
+    }
+    main {
+      padding: 115px 0 120px;
+      text-align: center;
+    }
+    .eyebrow {
+      color: var(--accent);
+      font-size: 12px;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+      font-weight: 800;
+    }
+    h1 {
+      font-size: clamp(40px, 7vw, 76px);
+      line-height: 1.1;
+      letter-spacing: -.055em;
+      margin: 22px auto;
+      max-width: 900px;
+    }
+    .gradient {
+      background: linear-gradient(90deg, #c4b5fd, #8b5cf6);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+    .description {
+      color: var(--muted);
+      font-size: clamp(16px, 2vw, 19px);
+      max-width: 650px;
+      margin: 28px auto;
+    }
+    .notice {
+      max-width: 600px;
+      margin: 50px auto 0;
+      padding: 24px;
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      background: rgba(24, 20, 37, .75);
+      text-align: left;
+    }
+    .notice strong {
+      display: block;
+      margin-bottom: 8px;
+      color: var(--text);
+    }
+    .notice p {
+      color: var(--muted);
+      font-size: 14px;
+      margin: 0;
+    }
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 28px 0 42px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    .footer-inner {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+    }
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 22px;
+    }
+    .footer-links a {
+      color: var(--muted);
+      text-decoration: none;
+    }
+    .footer-links a:hover { color: var(--accent); }
+    @media (max-width: 600px) {
+      main { padding: 80px 0; }
+      .status { font-size: 11px; }
+      .footer-inner { align-items: flex-start; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <a class="brand" href="./">Eltomia<span>.</span></a>
+      <span class="status">Private POC</span>
+    </header>
+
+    <main>
+      <div class="eyebrow">AI-Powered Growth Intelligence</div>
+
+      <h1>
+        Turn social data into
+        <span class="gradient">smarter growth.</span>
+      </h1>
+
+      <p class="description">
+        Eltomia is an AI-powered social media analytics
+        platform in development, designed to transform
+        performance data into clear, actionable insights
+        for creators and businesses.
+      </p>
+
+      <div class="notice">
+        <strong>Currently in private testing</strong>
+        <p>
+          Eltomia is undergoing a limited technical
+          proof of concept focused on validating
+          social media API integrations and analytics
+          capabilities. The service is not yet
+          publicly available.
+        </p>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer-inner">
+        <span>&copy; 2026 Eltomia</span>
+        <nav class="footer-links" aria-label="Legal links">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Service</a>
+          <a href="mailto:eltomiasupport@gmail.com">Contact</a>
+        </nav>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
